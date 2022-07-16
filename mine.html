@@ -6,8 +6,46 @@
 	<title>Работа с формами html</title>
 </head>
 <body>
-	<form action="#" method="post" enctype="multipart/form-data">
-		<input type="text" name="text_" value="">
+	<a href="index.html" style="text-align: right;">Back to the main page</a>
+	<form action="#" method="post" enctype="multipart/form-data" style="display: flex;flex-direction: column;">
+		<label for="text">Name:</label>
+		<input type="text" name="text_" value="" style="width: 20%;">
+
+		<label for="password">Password:</label>
+		<input type="password" name="password" value="">
+
+		<input type="submit" name="submit">
+	</form>
+	<form action="#" name="second-form" method="post" autocomplete="on">
+		<fieldset>
+			<legend>Second form</legend>
+			<label>userName: <input type="text" name="userName" id="userID" placeholder="Вася" autofocus></label> <br />
+			<br />
+			<label for="userPassword">userPassword: </label>
+			<input type="password" name="userPassword" required>
+			<p>Значит без разницы, пишем мы id или нет. Даже просто по имени он находит нужное поле</p>
+			<label for="userEmail">userEmail: </label>
+			<input type="email" name="userEmail">
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">All info about atributes for input types</a>
+		</fieldset>
+	</form>
+	<form action="#" name="third-form" method="post">
+		<label for="userText">userTextarea:</label>
+		<textarea name="userText" placeholder="Отображается криво. Надо будет ровнять с помощью стилей" id="userTextarea" cols="30" rows="10"></textarea>
+		<label>userTel:<input type="tel" name="userTel" placeholder="8-800-555-35-35" required></label>
+		<label>Tip:<input style="width: 400px;" type="text" placeholder="Напоминаю, что инпуты - это строчные элементы."></label>
+		<br />
+		<label for="radioRain">Man</label>
+		<input type="radio" name="radioRain" value="man">
+		<label for="radioRain2">Woman</label>
+		<input type="radio" name="radioRain2" value="woman">	
+		<label for="userCheckbox">Have you ever been in London?</label>
+		<input type="checkbox" name="userCheckbox" value="yes">	
+		<label for="file">Add file: </label>
+		<input type="file" name="file">
+		<br />
+		<input type="submit">
+		<input type="reset">
 	</form>
 </body>
 </html>

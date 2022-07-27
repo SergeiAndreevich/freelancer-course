@@ -1,0 +1,208 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+body{
+	padding: 30px;
+}
+
+.block {
+	margin: 0 0 30px 0;
+}
+
+.block p:nth-child(1){
+	background-color: yellow;
+}
+.block p:nth-child(2){
+	background-color: #eee;
+}
+.block p:nth-child(3){
+	background-color: green;
+}
+
+.block p:nth-child(3):hover{
+	background-color: yellow;
+}
+
+
+.block p{
+	font-size: 18px;
+	line-height: 24px;
+	margin: 0px 0px 20px 0px;
+}
+.link {
+	color: red;
+}
+.link:visited{
+	color: green;
+}
+.link:hover{
+	text-decoration: underline;
+	color: blue;
+}
+.link:active{
+	color:yellow;
+}
+
+.textinput {
+	border: 1px solid #666;
+	height: 50px;
+	padding: 0px 15px;
+	font-size: 18px;
+	width: 300px;
+	margin: 0px 0px 10px 0px;
+}
+
+.textinput:focus{
+	box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+
+.textbutton {
+	display: block;
+	width: 300px;
+	height: 50px;
+	background-color: #666;
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0px 0px 30px 0px;
+}
+
+.textbutton:hover{
+	background-color: #333;
+	color: yellow;
+}
+.textbutton:active{
+	background-color: #eee;
+}
+
+.list {}
+.list li{
+	font-size: 18px;
+	margin: 0px 0px 15px 0px;
+}
+/*
+.list li:first-child{
+	color: green;
+}
+.list li:last-child{
+	color: blue;
+	font-weight: 700;
+}
+*/
+.list li:nth-child(even){
+	text-transform: uppercase;
+}
+
+.next-button{
+	font-size: 18px;
+	color: whitesmoke;
+	background-color: black;
+	font-weight: bold;
+	padding: 20px 50px;
+	border-radius: 10px;
+	margin-bottom: 40px;
+}
+
+.header__list, .second__list{
+	font-size: 18px;
+	line-height: 28px;
+	padding-left: 25px;
+	list-style: lower-alpha;
+	margin-top: 60px;
+	width: 600px;
+}
+
+.header__list li:first-child{
+	text-decoration: line-through;
+	opacity: 80%;
+	border: 5px dotted blue;
+}
+.header__list li:first-child:hover{
+	border: 5px dashed yellow;
+}
+
+.header__list li:nth-child(2){
+	font-weight: bold;
+}
+.header__list li:nth-child(3){
+	font-style: italic;
+}
+.header__list li:last-child{
+	text-transform: uppercase;
+}
+.header__list:hover{
+	background-color: rgba(100, 60, 200, 0.3);
+	transition: 1s;
+}
+
+
+.second__list li:hover{
+	color: red;
+	transition: 0.5s;
+}
+.second__list li:nth-child(even){
+	text-transform: lowercase;
+}
+
+.third{
+	padding-top: 40px;
+}
+
+.third button{
+	border-radius: 25px;
+	padding: 15px 60px;
+	letter-spacing: 3px;
+	background-color: skyblue;
+	margin-right: 40px;
+	text-transform: uppercase;
+	color: whitesmoke;
+}
+
+.third button:nth-child(2):hover{
+	background-color: black;
+	transition: 0.5s;
+}
+.third button:last-child:active{
+	background-color: darkred;
+}
+
+.last-button{
+	margin-top: 40px;
+	padding: 20px 80px;
+	font-size: 24px;
+	color: black;
+	background-color: whitesmoke;
+	border: 1px solid black;
+}
+.last-button:hover{
+	color: white;
+	background-color: blue;
+}
+.last-button:active{
+	color: white;
+	background-color: red;
+}
+
+
+.input{
+	border: 1px solid magenta;
+}
+.input:focus{
+	box-shadow: 0 0 10px black;
+}

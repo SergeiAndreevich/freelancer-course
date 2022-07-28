@@ -52,3 +52,95 @@ body{
 .list li:hover:before{
 	background-color: yellow;
 }
+
+.page__ul1, .page__ul2{
+	padding: 40px;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.page__ul1 li:first-child{
+	text-decoration: line-through;
+}
+.page__ul1 li:nth-child(2){
+	font-weight: bold;
+}
+.page__ul1 li:nth-child(3){
+	font-style: italic;
+}
+.page__ul1 li:last-child{
+	text-transform: uppercase;
+}
+
+.page__ul2 li:hover{
+	color: red;
+}
+
+
+.page__ul1 li::before{
+	content: '';
+	margin-right: 8px;
+	display: inline-block;
+	border-radius: 50%;
+	height: 8px;
+	width: 8px;
+	background-color: black;
+}
+
+.page__ul2 li:before{
+	content: '>';
+	margin-right: 10px;
+}
+
+.buttons{
+	padding: 60px;
+}
+
+.button{
+	padding: 20px 60px;
+	color: white;
+	background-color: skyblue;
+	border-radius: 25px;
+	margin-right: 40px;
+}
+.buttons a:nth-child(2):hover{
+	color: black;
+	box-shadow:inset 5em 1em gold;
+	/*хз че это сверху. просто скопировал с журнала css*/
+}
+.buttons a:last-child:active{
+	background-color: purple;
+}
+.buttons a:last-child:hover{
+	box-shadow: 2px 2px 5px black;
+}
+
+.buttons a::after{
+	content: '→';
+	font-size: 32px;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+.textblock{
+	padding: 40px;
+}
+.textblock p{
+	padding: 30px;
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.textblock p:first-child::first-line{
+	color: red;
+}
+.textblock p:last-child::first-letter{
+	color: red;
+	font-size: 48px;
+	margin-left: 18px;
+}
+.textblock p:last-child{
+	border: 2px solid yellow;
+	outline: 2px dashed black;
+}
+

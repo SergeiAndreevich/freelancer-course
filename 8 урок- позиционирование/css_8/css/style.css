@@ -52,7 +52,30 @@ body{
 }
 .list li{
 	margin-bottom: 10px;
+	position: relative;
+	padding-left: 30px;
+
 }
 .list li:last-child{
 	margin-bottom: 0;
+}
+
+.list li::before{
+	content: '';
+	background: url('../img/icons/li.svg') 0 0 no-repeat;
+	position: absolute;
+	top: 6px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+}
+
+.block__4{
+	background-color: red;
+	position: fixed;
+}
+.block__5{
+	background-color: purple;
+	position: absolute;
+	top: 0;
 }
